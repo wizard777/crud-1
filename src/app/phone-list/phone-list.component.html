@@ -1,0 +1,46 @@
+<div class="container">
+    <!-- Show it when there is no phone -->
+    <!-- Pokaż to, gdy nie ma telefonu -->
+    <div class="text-center" *ngIf="Phones.length == 0">
+        <p>There is no phone added yet!</p>
+        <p> Nie dodano jeszcze żadnego telefonu! </p>
+        <div class="btn btn-outline-primary" routerLink="/create-phone">Add phone</div>
+    </div>
+
+    <!-- Employees list table, it hides when there is no employee -->
+    <!--Tabela listy pracowników, ukrywa się, gdy nie ma pracownika -->
+    <div *ngIf="Phones.length !== 0">
+        <h3 class="mb-3 text-center">Phones List</h3>
+
+    <div class="col-12">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th >Phone Id</th>
+                    <th >Name</th>
+                    <th >Desc</th>
+                    <th >Price</th>
+                    <th >Updated</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let phone of Phones">
+                    <td> {{phone.id}}</td>
+                    <td><a [title]="phone.name + 'opis'" routerLink="/phone-edit/{phone.id}"> {{phone.name}}</a> </td>
+                    <!-- <td>{{phone.name}}</td> -->
+                    <td>{{phone.desc}}</td>
+                    <td>{{phone.price}}</td>
+                    <td>{{phone.updated}}</td>
+                    <td>
+                        <a routerLink="/phone-edit/{phone.id}">Edit</a><br>
+                        <button (click)="deletePhone(phone.id)">Delete</button>
+                    </td>
+            
+                </tr>
+                
+            </tbody>
+        </table>
+    </div>
+    </div>
+
+</div>
