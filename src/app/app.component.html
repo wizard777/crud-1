@@ -1,3 +1,18 @@
 
-
-<router-outlet></router-outlet>
+<div>
+    <nav class="navbar navbar-expand navbar-dark bg-dark">
+      <a href="#" class="navbar-brand">PHONE</a>
+      <div class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a routerLink="phone-list" class="nav-link">Phone list</a>
+        </li>
+        <li class="nav-item">
+          <a routerLink="create-phone" class="nav-link">Add</a>
+        </li>
+      </div>
+    </nav>
+  
+    <div class="container mt-3">
+      <router-outlet></router-outlet>
+    </div>
+  </div>

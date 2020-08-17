@@ -4,7 +4,7 @@
     <div class="text-center" *ngIf="Phones.length == 0">
         <p>There is no phone added yet!</p>
         <p> Nie dodano jeszcze żadnego telefonu! </p>
-        <div class="btn btn-outline-primary" routerLink="/create-phone">Add phone</div>
+        <div  routerLink="/create-phone">Add phone</div>
     </div>
 
     <!-- Employees list table, it hides when there is no employee -->
@@ -32,10 +32,16 @@
                     <td>{{phone.price}}</td>
                     <td>{{phone.updated}}</td>
                     <td>
-                        <a routerLink="/phone-edit/{phone.id}">Edit</a><br>
+                        <button routerLink="/phone-edit/{{phone.id}}">Edit</button>&nbsp;
                         <button (click)="deletePhone(phone.id)">Delete</button>
                     </td>
+                    
             
+                </tr>
+                <tr class=" row justify-content-md-center">
+                    <td >
+                        <div class="btn btn-outline-primary" routerLink="/create-phone">Add phone</div>
+                    </td>
                 </tr>
                 
             </tbody>

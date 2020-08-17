@@ -8,7 +8,7 @@ const routes: Routes = [
   { path: '', pathMatch: 'full', redirectTo: 'phone-list' },
   { path: 'create-phone', component: PhoneCreateComponent },
   { path: 'phone-list', component: PhoneListComponent },
-  { path: 'phone-edit/id', component: PhoneEditComponent },
+  { path: 'phone-edit/:id', component: PhoneEditComponent },
   { path: '**', component: PhoneListComponent },
 ];
 

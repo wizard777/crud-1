@@ -8,14 +8,14 @@ import { RestApiService } from '../shared/rest-api.service';
   styleUrls: ['./phone-create.component.css'],
 })
 export class PhoneCreateComponent implements OnInit {
-  @Input() phoneDetails = { name: '', desc: '', price: 0, updated: '' };
+  @Input() phoneDetails = { name: 'name', desc: 'opis', price: 0, updated: 'updated' };
 
   constructor(private restApi: RestApiService, private router: Router) {}
 
   ngOnInit(): void {}
 
   // tslint:disable-next-line:typedef
-  addPhone(dataPhone) {
+  addPhone() {
     this.restApi.createPhone(this.phoneDetails).subscribe((data: {}) => {
       this.router.navigate(['/phones-list']);
     });
