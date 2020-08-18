@@ -26,7 +26,7 @@ export class PhoneListComponent implements OnInit {
   deletePhone(id): any {
     if ( window.confirm('jestes pewny ?')){
 this.restApi.deletePhone(id).subscribe(data => {
-  this.loadPhones();
+  // this.loadPhones();
 });
 
     }

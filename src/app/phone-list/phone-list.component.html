@@ -10,13 +10,13 @@
     <!-- Employees list table, it hides when there is no employee -->
     <!--Tabela listy pracowników, ukrywa się, gdy nie ma pracownika -->
     <div *ngIf="Phones.length !== 0">
-        <h3 class="mb-3 text-center">Phones List</h3>
+        <h3 class="mb-3 text-center">Phones list</h3>
 
     <div class="col-12">
         <table class="table">
             <thead>
                 <tr>
-                    <th >Phone Id</th>
+                    <!-- <th >Phone Id</th> -->
                     <th >Name</th>
                     <th >Desc</th>
                     <th >Price</th>
@@ -25,22 +25,25 @@
             </thead>
             <tbody>
                 <tr *ngFor="let phone of Phones">
-                    <td> {{phone.id}}</td>
-                    <td><a [title]="phone.name + 'opis'" routerLink="/phone-edit/{phone.id}"> {{phone.name}}</a> </td>
-                    <!-- <td>{{phone.name}}</td> -->
+                    <!-- <td> {{phone.id}}</td> -->
+                    <!-- <td><a [title]="phone.name + 'opis'" routerLink="/phone-edit/{phone.id}"> {{phone.name}}</a> </td> -->
+                    <td [title]="phone.name + 'opis'">{{phone.name}}</td>
                     <td>{{phone.desc}}</td>
                     <td>{{phone.price}}</td>
                     <td>{{phone.updated}}</td>
                     <td>
-                        <button routerLink="/phone-edit/{{phone.id}}">Edit</button>&nbsp;
-                        <button (click)="deletePhone(phone.id)">Delete</button>
+                        <!-- <button routerLink="/phone-edit/{{phone.id}}">Edit</button>&nbsp;
+                        <button (click)="deletePhone(phone.id)">Delete</button> -->
+                        <div class="btn btn-sm btn-outline-success" routerLink="/phone-edit/{{phone.id}}">Edit</div>&nbsp;
+                        <div class="btn btn-sm btn-outline-danger" (click)="deletePhone(phone.id)">Delete</div>
                     </td>
                     
             
                 </tr>
-                <tr class=" row justify-content-md-center">
-                    <td >
-                        <div class="btn btn-outline-primary" routerLink="/create-phone">Add phone</div>
+                <tr>
+                   
+                    <td>
+                        <div class="btn btn-sm btn-outline-primary" routerLink="/create-phone">Add phone</div>
                     </td>
                 </tr>
                 
