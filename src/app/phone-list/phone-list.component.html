@@ -17,9 +17,9 @@
             <thead>
                 <tr>
                     <!-- <th >Phone Id</th> -->
-                    <th >Name</th>
-                    <th >Desc</th>
-                    <th >Price</th>
+                    <th style="width: 280px;">Name</th>
+                    <th style="width: 220px;">Desc</th>
+                    <th style="width: 110px;">Price</th>
                     <th >Updated</th>
                 </tr>
             </thead>
@@ -27,29 +27,24 @@
                 <tr *ngFor="let phone of Phones">
                     <!-- <td> {{phone.id}}</td> -->
                     <!-- <td><a [title]="phone.name + 'opis'" routerLink="/phone-edit/{phone.id}"> {{phone.name}}</a> </td> -->
-                    <td [title]="phone.name + 'opis'">{{phone.name}}</td>
+                    <td  [title]="phone.name + 'opis'">{{phone.name}}</td>
                     <td>{{phone.desc}}</td>
                     <td>{{phone.price}}</td>
                     <td>{{phone.updated}}</td>
                     <td>
                         <!-- <button routerLink="/phone-edit/{{phone.id}}">Edit</button>&nbsp;
                         <button (click)="deletePhone(phone.id)">Delete</button> -->
-                        <div class="btn btn-sm btn-outline-success" routerLink="/phone-edit/{{phone.id}}">Edit</div>&nbsp;
-                        <div class="btn btn-sm btn-outline-danger" (click)="deletePhone(phone.id)">Delete</div>
+                        <div class="btn btn-sm btn-outline-success col-5" routerLink="/phone-edit/{{phone.id}}">Edit</div>&nbsp;&nbsp;
+                        <div class="btn btn-sm btn-outline-danger col-5" (click)="deletePhone(phone.id)">Delete</div>
                     </td>
-                    
-            
                 </tr>
                 <tr>
-                   
                     <td>
                         <div class="btn btn-sm btn-outline-primary" routerLink="/create-phone">Add phone</div>
                     </td>
                 </tr>
-                
             </tbody>
         </table>
     </div>
     </div>
-
 </div>
