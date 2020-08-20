@@ -8,13 +8,15 @@ import { AppComponent } from './app.component';
 import { PhoneCreateComponent } from './phone-create/phone-create.component';
 import { PhoneEditComponent } from './phone-edit/phone-edit.component';
 import { PhoneListComponent } from './phone-list/phone-list.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     PhoneCreateComponent,
     PhoneEditComponent,
-    PhoneListComponent
+    PhoneListComponent,
+    PageNotFoundComponent
   ],
   imports: [
     BrowserModule,

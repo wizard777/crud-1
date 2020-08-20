@@ -1,46 +1,26 @@
 {
   "phone": [
     {
-      "name": "Sony XZ2 ",
-      "desc": "Nowy i szybki",
-      "price": "6666",
+      "name": "namefsfs    ggg    ",
+      "desc": "wysoko drzo malo  gydihh ggtdd  hhtttt",
+      "price": "05343",
       "updated": "updated",
-      "id": 1
+      "id": 1,
+      "update": "ffgsdf   gggg   gfddf  "
     },
     {
-      "name": "SONY Xperia XZ Premium",
-      "desc": "kwadratowy troche",
-      "price": "999",
+      "name": "name",
+      "desc": "opis",
+      "price": 0,
       "updated": "updated",
       "id": 2
     },
     {
-      "name": "name111",
-      "desc": "opis11",
-      "price": "0111",
-      "updated": "updated111",
+      "name": "namewwww",
+      "desc": "opiseeeee",
+      "price": "222",
+      "updated": "updatedeff   fff",
       "id": 3
-    },
-    {
-      "name": "name777",
-      "desc": "opis7777",
-      "price": "0777",
-      "updated": "updated7777",
-      "id": 4
-    },
-    {
-      "name": "name6666",
-      "desc": "opis6666",
-      "price": "06666",
-      "updated": "updated6666",
-      "id": 5
-    },
-    {
-      "name": "name5555",
-      "desc": "opis5555",
-      "price": "0555",
-      "updated": "updated5555",
-      "id": 6
     }
   ],
   "comments": [
