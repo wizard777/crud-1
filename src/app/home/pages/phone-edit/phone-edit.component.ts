@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { RestApiService } from '../shared/rest-api.service';
+import { RestApiService } from 'src/app/shared/rest-api.service';
 import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({

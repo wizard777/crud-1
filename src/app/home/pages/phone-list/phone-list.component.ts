@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { IPhone } from '../shared/i-phone';
-import { RestApiService } from '../shared/rest-api.service';
+import { IPhone } from 'src/app/shared/i-phone';
+import { RestApiService } from 'src/app/shared/rest-api.service';
 
 @Component({
   selector: 'app-phone-list',

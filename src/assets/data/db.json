@@ -1,26 +1,11 @@
 {
   "phone": [
     {
-      "name": "namefsfs    ggg    ",
-      "desc": "wysoko drzo malo  gydihh ggtdd  hhtttt",
-      "price": "05343",
-      "updated": "updated",
-      "id": 1,
-      "update": "ffgsdf   gggg   gfddf  "
-    },
-    {
-      "name": "name",
+      "name": "namefsdfsd",
       "desc": "opis",
       "price": 0,
       "updated": "updated",
-      "id": 2
-    },
-    {
-      "name": "namewwww",
-      "desc": "opiseeeee",
-      "price": "222",
-      "updated": "updatedeff   fff",
-      "id": 3
+      "id": 1
     }
   ],
   "comments": [

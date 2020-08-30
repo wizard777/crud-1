@@ -1,0 +1,48 @@
+<!-- Show it when there is no phone -->
+<!-- Pokaż to, gdy nie ma telefonu -->
+<div class="text-center" *ngIf="Phones.length == 0">
+    <p>There is no phone added yet!</p>
+    <p> Nie dodano jeszcze żadnego telefonu! </p>
+    <div class="btn btn-outline-info" routerLink="/create-phone">Add phone</div>
+</div>
+
+<!-- Employees list table, it hides when there is no employee -->
+<!--Tabela listy pracowników, ukrywa się, gdy nie ma pracownika -->
+<div *ngIf="Phones.length !== 0" class="mb-4">
+    <h4 class="text-center mt-3 mb-4">Phones list</h4>
+</div>
+
+<div *ngIf="Phones.length !== 0">
+    <table class="table">
+        <thead>
+            <tr>
+                <!-- <th >Phone Id</th> -->
+                <th class="border">Name</th>
+                <th class="border">Desc</th>
+                <th class="border">Price</th>
+                <th class="border">Updated</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let phone of Phones">
+                <!-- <td> {{phone.id}}</td> -->
+                <!-- <td><a [title]="phone.name + 'opis'" routerLink="/phone-edit/{phone.id}"> {{phone.name}}</a> </td> -->
+                <td [title]="phone.name + 'opis'">{{phone.name}}</td>
+                <td>{{phone.desc}}</td>
+                <td>{{phone.price}}</td>
+                <td>{{phone.updated}}</td>
+                <td>
+                    <!-- <button routerLink="/phone-edit/{{phone.id}}">Edit</button>&nbsp;
+                        <button (click)="deletePhone(phone.id)">Delete</button> -->
+                    <button class="btn btn-sm btn-outline-success" routerLink="/phone-edit/{{phone.id}}">Edit</button>&nbsp;
+                    <button class="btn btn-sm btn-outline-danger" (click)="deletePhone(phone.id)">Delete</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <div>
+        <div class=" m-3 p-3 border">
+            <a class="btn btn-sm btn-outline-primary" [routerLink] = "'/create-phone'" >Add phone</a>
+        </div>
+    </div>
+</div>

@@ -5,10 +5,13 @@ import { FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { PhoneCreateComponent } from './phone-create/phone-create.component';
-import { PhoneEditComponent } from './phone-edit/phone-edit.component';
-import { PhoneListComponent } from './phone-list/phone-list.component';
-import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { FooterComponent } from './shared/layout/footer/footer.component';
+import { NavbarComponent } from './shared/layout/navbar/navbar.component';
+import { PageNotFoundComponent } from './home/pages/page-not-found/page-not-found.component';
+import { PhoneEditComponent } from './home/pages/phone-edit/phone-edit.component';
+import { PhoneCreateComponent } from './home/pages/phone-create/phone-create.component';
+import { PhoneListComponent } from './home/pages/phone-list/phone-list.component';
+
 
 @NgModule({
   declarations: [
@@ -16,7 +19,9 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
     PhoneCreateComponent,
     PhoneEditComponent,
     PhoneListComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    FooterComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,

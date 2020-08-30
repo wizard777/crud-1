@@ -1,22 +1,7 @@
-<div>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand">PHONE</a>
-    <div class="navbar-nav mr-auto">
-      <li class="nav-item">
-        <a routerLink="phone-list" class="nav-link">Phone list</a>
-      </li>
-      <li class="nav-item">
-        <!-- <a routerLink="create-phone" class="nav-link">Add</a> -->
-        <a [routerLink]="[{ outlets: { create: ['create-phone'] } }]">add</a>
-      </li>
-    </div>
-  </nav>
-</div>
-
+<app-navbar></app-navbar>
 
 <div class="container">
-  <div class="row">
-    <router-outlet class="border border-primary"></router-outlet>
-    <router-outlet class="border border-warning" name="create"></router-outlet>
-  </div>
+ <div class="border border-success">
+      <router-outlet ></router-outlet>
+    </div>
 </div>

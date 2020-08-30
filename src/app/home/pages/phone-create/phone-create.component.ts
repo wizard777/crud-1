@@ -1,6 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { Router } from '@angular/router';
-import { RestApiService } from '../shared/rest-api.service';
+import { RestApiService } from 'src/app/shared/rest-api.service';
 
 @Component({
   selector: 'app-phone-create',
@@ -17,7 +17,7 @@ export class PhoneCreateComponent implements OnInit {
   // tslint:disable-next-line:typedef
   addPhone() {
     this.restApi.createPhone(this.phoneDetails).subscribe((data: {}) => {
-      this.router.navigate(['/phones-list']);
+      this.router.navigate(['/phone-list']);
     });
   }
 }

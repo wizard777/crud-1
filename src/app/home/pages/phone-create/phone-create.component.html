@@ -1,0 +1,28 @@
+<div class="container">
+    <div class="row">
+        <div class="col-2"></div>
+        <div class="col-8">
+            <h4 class="text-center mt-3 mb-4">Create phone</h4>
+            <div class="form-group">
+                <input type="text" [(ngModel)]="phoneDetails.name" class="form-control">
+            </div>
+
+            <div class="form-group">
+                <input type="text" [(ngModel)]="phoneDetails.desc" class="form-control">
+            </div>
+
+            <div class="form-group">
+                <input type="text" [(ngModel)]="phoneDetails.price" class="form-control">
+            </div>
+
+            <div class="form-group">
+                <input type="text" [(ngModel)]="phoneDetails.updated" class="form-control">
+            </div>
+
+            <div class="form-group ">
+                <button class="btn btn-outline-primary btn-md btn-block" (click)="addPhone()">Create Phone</button>
+            </div>
+        </div>
+        <div class="col-2"></div>
+    </div>
+</div>
